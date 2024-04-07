@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    height:fit-content;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+font-family: Parisienne;
+color: white;
+}   
+sup{
+font-family: Parisienne;
+
+}
+p{ 
+font-family: Parisienne;
+z-index: 1;
+color: white;
+text-align: center;
+margin: 0
+}
+.carousel-container{ 
+    z-index: 1;
+}
+#background { 
+    position: absolute;
+    width: 95%;
+    padding: 2.5%;
+    aspect-ratio: 9/16;
+    background-color: white;
+}
+.names{ 
+    font-size: 4em;
+    line-height: 65px;
+    font-weight: 700;
+}
+.desc {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+#countdown-container { 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+.date { 
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: Parisienne;
+}
+
+.item-container{
+    width: 95%;
+    padding: 2.5%;
+    aspect-ratio: 9/16;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.slide-title{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.slide-two-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.slide-two-text {
+    font-size: 1em;
+    margin-top: 20px;
+    font-family: Signika;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.slide-two-date{
+    font-family: Roboto;
+    letter-spacing: 2px;
+    margin-top: 10px;
+ }
+.slide-three-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.icon { 
+    width: 50px;
+    height: 50px;
+    object-fit:contain;
+    margin-bottom: 20px;
+ }
+ .calendar { 
+    filter: invert();
+ }
+ .location{
+    margin-top: 40px;
+    margin-bottom: 30px;
+ }
+ .location-button{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    align-self: center;
+ }
+ .phone { 
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
+ .reply{
+    margin-bottom: 40px;
+ }

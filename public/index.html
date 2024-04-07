@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" 
+    type="image/png" 
+    href="../assets/favicon.png">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="../src/script.js"></script>
+
+</head>
+    <body>
+        <img id="background" src="https://c4.wallpaperflare.com/wallpaper/847/397/235/blurred-colorful-vertical-portrait-display-wallpaper-preview.jpg" alt="background">
+        <div class="owl-carousel">
+            <div class="item-container">
+                <p class="names">Elie<br/>&<br/>Mariebelle</p>
+                <p class="desc">We Getting Married</p>
+                <div id="countdown-container">
+                    <div class="date"><p id="days" class="date"></p> Days</div>
+                    <div class="date"><p id="hours" class="date"></p> Hours</div>
+                    <div class="date"><p id="minutes" class="date"></p> Minutes</div>
+                    <div class="date"><p id="seconds" class="date"></p> Seconds</div>
+                </div>
+            </div>
+            <div class="item-container">
+                <div style="height: 100%;">
+                    <p class="slide-title">Save The Dates</p>
+                    <p class="slide-two-name">Elias and Basma Ayoub</p>
+                    <p class="slide-two-name">Father and mother Najem</p>
+                    <p class="slide-two-text">Request the honor of your presence at the wedding of their son and daughter</p>
+                    <p class="slide-two-name">Elie & Mariebelle</p>
+                    <p class="slide-two-date">on Saturday 20<sup>th</sup> of July, 2024</p>
+                </div>
+            </div>
+            <div class="item-container">
+                <div style="height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;">
+                    <p class="slide-title">Wedding Ceremony</p>
+                    <img src="../assets/calendar.png" class="icon calendar" alt="calendar"/>
+                    <p class="slide-three-text">July 20, 2024</p>
+                    <p class="slide-three-text">6:00 pm</p>
+                    <img src="../assets/location.png" class="icon location" alt="calendar"/>
+                    <p class="slide-three-text">Mar Jerjes</p>
+                    <p class="slide-three-text">Tartej</p>
+                    <p onclick="openChurchLocation()" class="location-button">Location Map</p>
+                </div>
+            </div>
+            <div class="item-container">
+                <div style="height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;">
+                    <p class="slide-title">Wedding Dinner</p>
+                    <img src="../assets/calendar.png" class="icon calendar" alt="calendar"/>
+                    <p class="slide-three-text">July 20, 2024</p>
+                    <p class="slide-three-text">8:00 pm</p>
+                    <img src="../assets/location.png" class="icon location" alt="calendar"/>
+                    <p class="slide-three-text">Byblos Palace</p>
+                    <p class="slide-three-text">Bridal Outing Byblos Sur Mere</p>
+                    <p onclick="openByblosPalace()" class="location-button">Location Map</p>
+                </div>
+            </div>
+            <div class="item-container">
+                <div style="height: 100%;">
+                    <p class="slide-title">Be Our Guest</p>
+                    <p class="slide-two-text reply">Please reply before 2024</p>
+                    <p class="slide-two-name">Maribelle Ayoub</p>
+                    <p class="slide-two-date phone">+961 76 171 430</p>
+                    <p class="slide-two-name">Elias Najem</p>
+                    <p class="slide-two-date phone">+961 3 979 658</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
