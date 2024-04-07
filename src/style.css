@@ -32,6 +32,7 @@ margin: 0
     padding: 2.5%;
     aspect-ratio: 9/16;
     background-color: white;
+    filter: blur(1px);
 }
 .names{ 
     font-size: 4em;
@@ -127,4 +128,7 @@ margin: 0
  }
  .reply{
     margin-bottom: 40px;
+ }
+ .owl-carousel {
+    background-color: #23232343;
  }
