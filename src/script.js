@@ -6,6 +6,7 @@ let slideIndex = 1;
 let audioPlayerInterval;
 let muted = false;
 const audio = new Audio('./assets/wedding-theme.mp3');
+let itemsToLoad = [];
 
 var countdownInterval = setInterval(()=>getCountDown(), 1000);
 
@@ -49,7 +50,22 @@ const handleAudioPlayer = () => {
     }, 2000)
 }
 
+function setReadyWhenLoaded (index) {
+    console.log(index, ' loaded');
+
+}
+
+
 $(document).ready(function(){
+    itemsToLoad = document.getElementsByTagName('img')
+    console.log(itemsToLoad);
+    
+    for(var i =0; i<itemsToLoad.length;i++)
+    {
+        itemsToLoad[i].setAttribute('onload', 'setReadyWhenLoaded('+i+')')
+    }
+    itemsToLoad=new Array(itemsToLoad.length).fill(false)
+    console.log(itemsToLoad);
     showSlides();
     initializeCarousel();
     getCountDown();
