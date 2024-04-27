@@ -11,6 +11,7 @@ body{
     background-color: #232323;
 font-family: Parisienne;
 color: white;
+background-color: black;
 }   
 sup{
 font-family: Parisienne;
@@ -26,11 +27,17 @@ margin: 0
 .carousel-container{ 
     z-index: 1;
 }
-.background { 
+#images-container 
+{
     position: absolute;
     width: 100%;
-    object-fit: contain;
-    
+    height: 100%;
+    overflow: hidden;
+}
+.background { 
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
     /* aspect-ratio: 9/16; */
     filter: blur(1px);
     transition-duration: 3s;
@@ -150,11 +157,11 @@ margin: 0
 
  #sound-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 20px;
     z-index: 999999;
  }
  #sound-icon {
     object-fit: contain;
-    width: 50px;
+    width: 35px;
  }
