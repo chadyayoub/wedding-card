@@ -1,13 +1,16 @@
 const SLIDESHOW_TIMEOUT = 7000;
+const MUTE_ICON_SOURCE = "./assets/mute.png" 
+const UNMUTE_ICON_SOURCE = "./assets/unmute.png" 
 const WEDDING_DATE = "Jul 20, 2024 18:00:00 +02:00GMT";
 let slideIndex = 1;
 let audioPlayerInterval;
+let muted = false;
 const audio = new Audio('./assets/wedding-theme.mp3');
+
 var countdownInterval = setInterval(()=>getCountDown(), 1000);
 
 function showSlides() {
   setTimeout(() => {
-      console.log(slideIndex)
     let i;
     let slides = document.getElementsByClassName("background");
     for (i = 0; i < slides.length ; i++) {
@@ -40,10 +43,8 @@ const handleAudioPlayer = () => {
         try{
             audio.volume=.2;
             audio.play();
-
           }catch(e){
-            console.log('error',e)
-            handleAudioPlayer();
+            
           }
     }, 2000)
 }
@@ -79,7 +80,6 @@ function getCountDown (){
     document.getElementById("seconds").innerHTML = seconds;
   
     // If the count down is finished, write some text
-    console.log(distance)
     if (distance < 0) {
       clearInterval(countdownInterval);
       document.getElementById("item-1").innerHTML = "Bro foot hdar l 3eres minou heda li hal2ad ma 3endo hayet la hatta 3am befout 3al cart hala2??????????";
@@ -96,4 +96,13 @@ const openByblosPalace = () => {
 
 const openChurchLocation = () => {
     window.open("https://www.google.com/maps/place/Church+Of+Mar+Gerges+Tartej/@34.1827429,35.822034,17z/data=!3m1!4b1!4m6!3m5!1s0x151f56777d4e0acb:0xccf9d6303244ab6b!8m2!3d34.1827385!4d35.8246089!16s%2Fg%2F11f04320tf?entry=ttu")
+}
+
+
+function handleMuteUnmute () {
+    if(muted) {
+        document.getElementById("sound-icon").setAttribute("src", MUTE_ICON_SOURCE);}
+    else document.getElementById("sound-icon").setAttribute("src", UNMUTE_ICON_SOURCE);
+    muted= !muted;
+    audio.muted=muted
 }
