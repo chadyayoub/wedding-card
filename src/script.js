@@ -1,4 +1,27 @@
-$(document).ready(function(){
+const SLIDESHOW_TIMEOUT = 7000;
+const WEDDING_DATE = "Jul 20, 2024 18:00:00 +02:00GMT";
+let slideIndex = 1;
+let audioPlayerInterval;
+const audio = new Audio('./assets/wedding-theme.mp3');
+var countdownInterval = setInterval(()=>getCountDown(), 1000);
+
+function showSlides() {
+  setTimeout(() => {
+      console.log(slideIndex)
+    let i;
+    let slides = document.getElementsByClassName("background");
+    for (i = 0; i < slides.length ; i++) {
+      slides[i].className = "background fade";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+      {slides[slideIndex-1].className = "background show";
+    }
+    showSlides() // Change image every 2 seconds
+  }, SLIDESHOW_TIMEOUT);
+}
+
+function initializeCarousel () {
     $(".owl-carousel").owlCarousel({
         loop:false,
         margin:0 ,
@@ -9,13 +32,37 @@ $(document).ready(function(){
             }
         }
     });
+}
+
+
+const handleAudioPlayer = () => {
+    audioPlayerInterval = setInterval(()=>{
+        try{
+            audio.volume=.2;
+            audio.play();
+
+          }catch(e){
+            console.log('error',e)
+            handleAudioPlayer();
+          }
+    }, 2000)
+}
+
+$(document).ready(function(){
+    showSlides();
+    initializeCarousel();
+    getCountDown();
+    handleAudioPlayer()
+;
   });
+
+
+
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 20, 2024 18:00:00 +02:00GMT").getTime();
+var countDownDate = new Date(WEDDING_DATE).getTime();
 
 function getCountDown (){
     var now = new Date().getTime();
-console.log('updating')
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
   
@@ -32,14 +79,15 @@ console.log('updating')
     document.getElementById("seconds").innerHTML = seconds;
   
     // If the count down is finished, write some text
+    console.log(distance)
     if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "CONGRATULATIONS";
+      clearInterval(countdownInterval);
+      document.getElementById("item-1").innerHTML = "Bro foot hdar l 3eres minou heda li hal2ad ma 3endo hayet la hatta 3am befout 3al cart hala2??????????";
+      document.getElementById("item-1").className = "bahdale";
     }
 }
-window.onload = getCountDown;
+// window.onload = getCountDown;
 // Update the count down every 1 second
-var x = setInterval(()=>getCountDown(), 1000);
 
 
 const openByblosPalace = () => {
