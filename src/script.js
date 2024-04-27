@@ -116,9 +116,10 @@ const openChurchLocation = () => {
 
 
 function handleMuteUnmute () {
-    if(muted) {
-        document.getElementById("sound-icon").setAttribute("src", MUTE_ICON_SOURCE);}
-    else document.getElementById("sound-icon").setAttribute("src", UNMUTE_ICON_SOURCE);
+    if(muted) 
+        document.getElementById("sound-icon").setAttribute("src", UNMUTE_ICON_SOURCE);
+    else 
+        document.getElementById("sound-icon").setAttribute("src", MUTE_ICON_SOURCE);
     muted= !muted;
     audio.muted=muted
 }
