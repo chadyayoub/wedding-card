@@ -1,98 +1,231 @@
-                                                                                                                                                                                                                                                                                                            <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="You Are Invited To Attend Elias And Maribelle's Wedding" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You Are Invited To Attend Elias And Maribelle's Wedding"
+    />
     <meta property="og:title" content="Wedding Invitation" />
     <!-- TODO: Replace once full domain is added -->
-    <meta property="og:url" content="ttps://chadyayoub.github.io/wedding-card/" />
-    <meta property="og:description" content="You Are Invited To Attend Elias And Maribelle's Wedding" />
-    <meta property="og:image" content="https://media.istockphoto.com/id/502711544/photo/rings.webp?b=1&s=170667a&w=0&k=20&c=UnC1U08uujF6Weh3Cz1u8duHbG-0luKf_U9_GfRo2Bc=" />
+    <meta
+      property="og:url"
+      content="ttps://chadyayoub.github.io/wedding-card/"
+    />
+    <meta
+      property="og:description"
+      content="You Are Invited To Attend Elias And Maribelle's Wedding"
+    />
+    <meta
+      property="og:image"
+      content="https://media.istockphoto.com/id/502711544/photo/rings.webp?b=1&s=170667a&w=0&k=20&c=UnC1U08uujF6Weh3Cz1u8duHbG-0luKf_U9_GfRo2Bc="
+    />
     <meta property="og:type" content="article" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" 
-    type="image/png" 
-    href="./assets/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <title>Wedding Invitation</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Parisienne"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Signika"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./public/owlcarousel/owl.theme.default.min.css"
+    />
     <script src="./public/jquery.min.js"></script>
     <script src="./public/owlcarousel/owl.carousel.min.js"></script>
     <script src="./src/script.js"></script>
+  </head>
+  <body style="max-height: 100%">
+    <div id="images-container">
+      <!-- 1 -->
+      <div class="image-container show">
+        <img
+          class="background-fill"
+          src="./assets/wedding1.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding1.jpeg" alt="background" />
+      </div>
 
-</head>
-    <body>
-        <div id="images-container">
-            <img class="background show" src="./assets/wedding.jpg" alt="background">
-            <img class="background fade " src="./assets/wedding2.jpg" alt="background">
-            <img class="background fade" src="./assets/wedding3.jpg" alt="background">
+      <!-- 2 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding2.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding2.jpeg" alt="background" />
+      </div>
+
+      <!-- 3 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding3.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding3.jpeg" alt="background" />
+      </div>
+
+      <!-- 4 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding4.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding4.jpeg" alt="background" />
+      </div>
+
+      <!-- 5 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding5.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding5.jpeg" alt="background" />
+      </div>
+
+      <!-- 6 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding6.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding6.jpeg" alt="background" />
+      </div>
+
+      <!-- 7 -->
+      <div class="image-container fade">
+        <img
+          class="background-fill"
+          src="./assets/wedding7.jpeg"
+          alt="background"
+        />
+        <img class="background" src="./assets/wedding7.jpeg" alt="background" />
+      </div>
+    </div>
+    <div class="owl-carousel">
+      <div class="item-container" id="item-1">
+        <p class="names">Elias<br />&<br />Marie-belle</p>
+        <p class="desc">Are Getting Married</p>
+        <div id="countdown-container">
+          <div class="date">
+            <p id="days" class="date"></p>
+            Days
+          </div>
+          <div class="date">
+            <p id="hours" class="date"></p>
+            Hours
+          </div>
+          <div class="date">
+            <p id="minutes" class="date"></p>
+            Minutes
+          </div>
+          <div class="date">
+            <p id="seconds" class="date"></p>
+            Seconds
+          </div>
         </div>
-        <div class="owl-carousel">
-            <div class="item-container" id="item-1">
-                <p class="names">Elie<br/>&<br/>Mariebelle</p>
-                <p class="desc">We Getting Married</p>
-                <div id="countdown-container">
-                    <div class="date"><p id="days" class="date"></p> Days</div>
-                    <div class="date"><p id="hours" class="date"></p> Hours</div>
-                    <div class="date"><p id="minutes" class="date"></p> Minutes</div>
-                    <div class="date"><p id="seconds" class="date"></p> Seconds</div>
-                </div>
-            </div>
-            <div class="item-container">
-                <p class="slide-title">Save The Dates</p>
-                <p class="slide-two-name">Elias and Basma Ayoub</p>
-                <p class="slide-two-name">Father and mother Najem</p>
-                <p class="slide-two-text">Request the honor of your presence at the wedding of their son and daughter</p>
-                <p class="slide-two-name">Elie & Mariebelle</p>
-                <p class="slide-two-date">on Saturday 20<sup>th</sup> of July, 2024</p>
-            </div>
-            <div class="item-container">
-                <div style="height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;">
-                    <p class="slide-title">Wedding Ceremony</p>
-                    <img src="./assets/calendar.png" class="icon calendar" alt="calendar"/>
-                    <p class="slide-three-text">July 20, 2024</p>
-                    <p class="slide-three-text">6:00 pm</p>
-                    <img src="./assets/location.png" class="icon location" alt="calendar"/>
-                    <p class="slide-three-text">Mar Jerjes</p>
-                    <p class="slide-three-text">Tartej</p>
-                    <p onclick="openChurchLocation()" class="location-button">Location Map</p>
-                </div>
-            </div>
-            <div class="item-container">
-                <div style="height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;">
-                    <p class="slide-title">Wedding Dinner</p>
-                    <img src="./assets/calendar.png" class="icon calendar" alt="calendar"/>
-                    <p class="slide-three-text">July 20, 2024</p>
-                    <p class="slide-three-text">8:00 pm</p>
-                    <img src="./assets/location.png" class="icon location" alt="calendar"/>
-                    <p class="slide-three-text">Byblos Palace</p>
-                    <p class="slide-three-text">Bridal Outing Byblos Sur Mere</p>
-                    <p onclick="openByblosPalace()" class="location-button">Location Map</p>
-                </div>
-            </div>
-            <div class="item-container">
-                <p class="slide-title">Be Our Guest</p>
-                <p class="slide-two-text reply">Please reply before 2024</p>
-                <p class="slide-two-name">Maribelle Ayoub</p>
-                <p class="slide-two-date phone">+961 76 171 430</p>
-                <p class="slide-two-name">Elias Najem</p>
-                <p class="slide-two-date phone">+961 3 979 658</p>
-            </div>
+      </div>
+      <div class="item-container">
+        <p class="slide-title">Save The Dates</p>
+        <p class="slide-two-name">I have found the one whom my soul loves</p>
+        <p class="slide-two-text">
+          With joyous hearts, Najem and Ayoub families invite you to celebrate
+          the wedding of their son and daughter
+        </p>
+        <p class="slide-two-name">Elias Tony Najem & Marie-belle Elias Ayoub</p>
+        <p class="slide-two-date">on July 20, 2024</p>
+      </div>
+      <div class="item-container">
+        <div
+          style="
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <p class="slide-title">Wedding Ceremony</p>
+          <img
+            src="./assets/calendar.png"
+            class="icon calendar"
+            alt="calendar"
+          />
+          <p class="slide-three-text">July 20, 2024</p>
+          <p class="slide-three-text">6:00 pm</p>
+          <img
+            src="./assets/location.png"
+            class="icon location"
+            alt="calendar"
+          />
+          <p class="slide-three-text">Mar Jerjes Church</p>
+          <p class="slide-three-text">Tartej</p>
+          <p onclick="openChurchLocation()" class="location-button">
+            Location Map
+          </p>
         </div>
-        <div id="sound-container" onclick="handleMuteUnmute()">
-            <img src="./assets/unmute.png" id="sound-icon" />
+      </div>
+      <div class="item-container">
+        <div
+          style="
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <p class="slide-title">Wedding Dinner</p>
+          <img
+            src="./assets/calendar.png"
+            class="icon calendar"
+            alt="calendar"
+          />
+          <p class="slide-three-text">July 20, 2024</p>
+          <p class="slide-three-text">8:00 pm</p>
+          <img
+            src="./assets/location.png"
+            class="icon location"
+            alt="calendar"
+          />
+          <p class="slide-three-text">Byblos Palace</p>
+          <p class="slide-three-text">Jbeil Highway</p>
+          <p onclick="openByblosPalace()" class="location-button">
+            Location Map
+          </p>
         </div>
-    </body>
+      </div>
+      <div class="item-container">
+        <p class="slide-title">Be Our Guest</p>
+        <p class="slide-two-text reply">
+          Your presence would mean the world to us as we embark on this journey
+          together. Kindly confirm your attendance by contacting us at the
+          numbers provided below. We eagerly anticipate sharing the special day
+          with you.
+        </p>
+        <p class="slide-two-name">Maribelle Ayoub</p>
+        <p class="slide-two-date phone">+961 76 171 430</p>
+        <p class="slide-two-name">Elias Najem</p>
+        <p class="slide-two-date phone">+961 3 979 658</p>
+      </div>
+    </div>
+    <div id="sound-container" onclick="handleMuteUnmute()">
+      <img src="./assets/unmute.png" id="sound-icon" />
+    </div>
+  </body>
 </html>
