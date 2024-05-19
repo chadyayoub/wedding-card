@@ -166,8 +166,8 @@ p {
   margin-bottom: 40px;
 }
 .owl-carousel {
-  height: 100%;
-  background-color: #23232343;
+  height: 100vh;
+  background-color: #f008;
 }
 
 #sound-container {
