@@ -71,7 +71,7 @@ $(document).ready(function () {
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date(WEDDING_DATE).getTime();
+var countDownDate = 1721498400000;
 
 function getCountDown() {
   var now = new Date().getTime();
@@ -123,3 +123,4 @@ function handleMuteUnmute() {
   muted = !muted;
   audio.muted = muted;
 }
+console.log(countDownDate);
