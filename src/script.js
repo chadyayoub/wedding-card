@@ -1,8 +1,7 @@
 const SLIDESHOW_TIMEOUT = 7000;
 const MUTE_ICON_SOURCE = "./assets/mute.png";
 const UNMUTE_ICON_SOURCE = "./assets/unmute.png";
-// const WEDDING_DATE = 1721498400000;
-const WEDDING_DATE = Date.now() + 10000;
+const WEDDING_DATE = 1721498400000;
 let slideIndex = 1;
 let audioPlayerInterval;
 let muted = false;
