@@ -47,6 +47,7 @@ const handleAudioPlayer = () => {
     try {
       audio.volume = 0.2;
       audio.play();
+      audio.fastSeek(20000);
     } catch (e) {}
   }, 2000);
 };
