@@ -1,13 +1,15 @@
 const SLIDESHOW_TIMEOUT = 7000;
 const MUTE_ICON_SOURCE = "./assets/mute.png";
 const UNMUTE_ICON_SOURCE = "./assets/unmute.png";
-const WEDDING_DATE = "Jul 20, 2024 18:00:00 +02:00GMT";
+// const WEDDING_DATE = 1721498400000;
+const WEDDING_DATE = Date.now() + 10000;
 let slideIndex = 1;
 let audioPlayerInterval;
 let muted = false;
 const audio = new Audio("./assets/wedding-theme.mp3");
 const classNameForFade = "image-container";
 let itemsToLoad = [];
+let audioBoostInterval;
 
 var countdownInterval = setInterval(() => getCountDown(), 1000);
 
@@ -43,11 +45,18 @@ function initializeCarousel() {
 }
 
 const handleAudioPlayer = () => {
-  audioPlayerInterval = setInterval(() => {
+  audioPlayerInterval = setInterval(async () => {
     try {
-      audio.volume = 0.2;
-      audio.play();
-      audio.fastSeek(20000);
+      audio.volume = 0;
+      audio.currentTime = 50;
+      await audio.play();
+      audioBoostInterval = setInterval(() => {
+        audio.volume += 0.01;
+        if (audio.volume >= 0.99) audio.volume = 1;
+        console.log("calling", audio.volume);
+        if (audio.volume >= 0.99) clearInterval(audioBoostInterval);
+      }, 50);
+      clearInterval(audioPlayerInterval);
     } catch (e) {}
   }, 2000);
 };
@@ -71,13 +80,10 @@ $(document).ready(function () {
   handleAudioPlayer();
 });
 
-// Set the date we're counting down to
-var countDownDate = 1721498400000;
-
 function getCountDown() {
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = WEDDING_DATE - now;
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -94,8 +100,7 @@ function getCountDown() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(countdownInterval);
-    document.getElementById("item-1").innerHTML =
-      "Bro foot hdar l 3eres minou heda li hal2ad ma 3endo hayet la hatta 3am befout 3al cart hala2??????????";
+    document.getElementById("item-1").innerHTML = "Just married";
     document.getElementById("item-1").className = "bahdale";
   }
 }
@@ -130,4 +135,3 @@ function handleMuteUnmute() {
   muted = !muted;
   audio.muted = muted;
 }
-console.log(countDownDate);

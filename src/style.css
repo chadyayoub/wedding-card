@@ -12,6 +12,7 @@ body {
     font-family: Parisienne;
     color: white;
     background-color: black;
+    user-select: none;
 }
 
 sup {
@@ -96,11 +97,12 @@ p {
 }
 
 .bahdale {
-    font-size: 2em;
+    font-size: 4em;
     height: 100%;
     display: flex;
     text-align: center;
     margin-top: 350px;
+    justify-content: center;
 }
 
 .date {
@@ -207,4 +209,21 @@ p {
 #sound-icon {
     object-fit: contain;
     width: 35px;
+}
+
+#arrow-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 999999;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    filter: invert();
+    filter: brightness(100);
+    width: 60px;
 }
