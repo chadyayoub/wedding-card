@@ -113,6 +113,12 @@ const openChurchLocation = () => {
   );
 };
 
+const openByblosSurMerLocation = () => {
+  window.open(
+    "https://www.google.com/maps/dir//Byblos+Sur+Mer+-+Hotel/@34.1223145,35.560527,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x151f5cae037d30c3:0x85667b87c205b371!2m2!1d35.6426579!2d34.1227425?hl=en-af&entry=ttu"
+  );
+};
+
 function handleMuteUnmute() {
   if (muted)
     document
