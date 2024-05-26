@@ -213,17 +213,23 @@ p {
 
 #arrow-container {
     position: absolute;
-    bottom: 20px;
+    bottom: -10px;
     width: 100%;
     z-index: 999999;
     flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    right: 20px;
+}
+
+.swipe-right {
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .arrow {
     filter: invert();
     filter: brightness(100);
-    width: 60px;
+    width: 40px;
+    height: 20px;
 }

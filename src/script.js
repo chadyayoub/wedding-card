@@ -52,7 +52,6 @@ const handleAudioPlayer = () => {
       audioBoostInterval = setInterval(() => {
         audio.volume += 0.01;
         if (audio.volume >= 0.99) audio.volume = 1;
-        console.log("calling", audio.volume);
         if (audio.volume >= 0.99) clearInterval(audioBoostInterval);
       }, 50);
       clearInterval(audioPlayerInterval);
@@ -65,14 +64,12 @@ function setReadyWhenLoaded(index) {
 }
 
 $(document).ready(function () {
-  itemsToLoad = document.getElementsByTagName("img");
-  console.log(itemsToLoad);
+  // itemsToLoad = document.getElementsByTagName("img");
 
-  for (var i = 0; i < itemsToLoad.length; i++) {
-    itemsToLoad[i].setAttribute("onload", "setReadyWhenLoaded(" + i + ")");
-  }
-  itemsToLoad = new Array(itemsToLoad.length).fill(false);
-  console.log(itemsToLoad);
+  // for (var i = 0; i < itemsToLoad.length; i++) {
+  //   itemsToLoad[i].setAttribute("onload", "setReadyWhenLoaded(" + i + ")");
+  // }
+  // itemsToLoad = new Array(itemsToLoad.length).fill(false);
   showSlides();
   initializeCarousel();
   getCountDown();
