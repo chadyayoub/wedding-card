@@ -164,9 +164,6 @@ p {
     margin-bottom: 20px;
 }
 
-.calendar {
-    filter: invert();
-}
 
 .location {
     margin-top: 40px;
