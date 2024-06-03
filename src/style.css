@@ -1,232 +1,231 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: fit-content;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #232323;
-    font-family: Parisienne;
-    color: white;
-    background-color: black;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  font-family: Parisienne;
+  color: white;
+  background-color: black;
+  user-select: none;
 }
 
 sup {
-    font-family: Parisienne;
+  font-family: Parisienne;
 }
 
 p {
-    font-family: Parisienne;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    margin: 0;
+  font-family: Parisienne;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  margin: 0;
 }
 
 .carousel-container {
-    z-index: 1;
+  z-index: 1;
 }
 
 #images-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
 }
 
 .image-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    display: flex;
-    transition-duration: 3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  transition-duration: 3s;
 }
 
 .background {
-    width: 100%;
-    object-fit: contain;
-    z-index: 1;
+  width: 100%;
+  object-fit: contain;
+  z-index: 1;
 }
 
 .background-fill {
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    object-fit: cover;
-    filter: blur(10px);
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  filter: blur(10px);
 }
 
 /* Fading animation */
 .fade {
-    opacity: 0;
-    transition-duration: 3s;
+  opacity: 0;
+  transition-duration: 3s;
 }
 
 .show {
-    opacity: 1;
-    transition-duration: 3s;
+  opacity: 1;
+  transition-duration: 3s;
 }
 
 .names {
-    font-size: 4em;
-    line-height: 65px;
-    font-weight: 700;
+  font-size: 4em;
+  line-height: 65px;
+  font-weight: 700;
 }
 
 .desc {
-    font-size: 1.5em;
-    margin-top: 40px;
+  font-size: 1.5em;
+  margin-top: 40px;
 }
 
 #countdown-container {
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-    margin-top: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .bahdale {
-    font-size: 4em;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    margin-top: 350px;
-    justify-content: center;
+  font-size: 4em;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  margin-top: 350px;
+  justify-content: center;
 }
 
 .date {
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-family: Parisienne;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: Parisienne;
 }
 
 .item-container {
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* align-self: center; */
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
 }
 
 .slide-title {
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 50px;
-    margin-top: 40px;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 .slide-two-name {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .slide-two-name .sub {
-    font-size: 0.5em;
+  font-size: 0.5em;
 }
 
 .slide-two-text {
-    font-size: 1em;
-    margin-top: 20px;
-    font-family: Signika;
-    font-style: italic;
-    margin-bottom: 15px;
+  font-size: 1em;
+  margin-top: 20px;
+  font-family: Signika;
+  font-style: italic;
+  margin-bottom: 15px;
 }
 
 .slide-two-date {
-    font-family: Roboto;
-    letter-spacing: 2px;
-    margin-top: 10px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+  margin-top: 10px;
 }
 
 .slide-three-text {
-    font-size: 1.2em;
-    margin-top: 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
-
 .location {
-    margin-top: 40px;
-    margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .location-button {
-    margin-top: 20px;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: white;
-    border-style: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100px;
-    align-self: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  align-self: center;
 }
 
 .phone {
-    margin-top: 10px;
-    margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .reply {
-    margin-bottom: 40px;
+  margin-bottom: 2 0px;
 }
 
 .owl-carousel {
-    height: 100vh;
-    background-color: #00000066;
+  height: 100vh;
+  background-color: #00000066;
 }
 
 #sound-container {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    z-index: 999999;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  z-index: 999999;
 }
 
 #sound-icon {
-    object-fit: contain;
-    width: 35px;
+  object-fit: contain;
+  width: 35px;
 }
 
 #arrow-container {
-    position: absolute;
-    bottom: -10px;
-    width: 100%;
-    z-index: 999999;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-end;
-    right: 20px;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  z-index: 999999;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  right: 20px;
 }
 
 .swipe-right {
-    font-size: 1em;
-    margin-bottom: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
 .arrow {
-    filter: invert();
-    filter: brightness(100);
-    width: 40px;
-    height: 20px;
+  filter: invert();
+  filter: brightness(100);
+  width: 40px;
+  height: 20px;
 }
